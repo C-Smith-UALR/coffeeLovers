@@ -1,0 +1,11 @@
+title,department,courseNo,days,beginHour,beginMin,endHour,endMin,disciplines
+Programming I,CPSC,1375,MW,16,30,17,45,None,Programming - C++
+Programming II,CPSC,2376,TR,10,50,12,5,None,Programming - C++
+Data Structures and Algorithms,CPSC,2380,TR,10,50,12,5,None,Data Structures and Algorithms,Programming - C++
+Operating Systems,CPSC,3380,TR,9,25,10,40,None,Operating Systems
+Language Structure,CPSC,3383,TR,16,30,17,45,None,Programming Languages
+Computer Organization I,CPSC,3482,MW,9,0,11,5,None,Computer Organization
+Artificial Intelligence,CPSC,4383,MW,12,15,13,30,None,Artificial Intelligence,Programming - Python
+Mobile Apps Development,CPSC,4367,MW,16,30,17,45,None,Mobile Applications
+Computer Security,CPSC,4360,MW,18,0,19,15,None,Cybersecurity
+Intro to Game Programming,CPSC,2377,MW,12,15,13,30,None,Game Development
