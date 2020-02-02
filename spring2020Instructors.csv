@@ -1,1 +1,13 @@
-<instructor info here>
+fname,lname,maxClassLoad,disciplines
+Sean,Orme,2,Programming - C++,Data Structures and Algorithms,Computer Organization,Game Development,Operating Systems,Programming - Python
+Alexander,Jaeger,2,Programming - C++,Data Structures and Algorithms
+Chia-Chu,Chiang,2,Programming - C++,Data Structures and Algorithms
+Conner,Young,2,Programming - C++,Data Structures and Algorithms
+Xian,Liu,2,Operating Systems,Programming - C++,Data Structures and Algorithms
+Jan,Springer,2,Programming Languages,Programming - C++,Data Structures and Algorithms,Programming - Python
+Philip,Huff,2,Cybersecurity,Operating Systems,Data Structures and Algorithms,Networks
+Ivan,Conde,2,Mobile Applications,Operating Systems,Data Structures and Algorithms,Networks
+Brian,Keltch,2,Mobile Applications,Networks,Parallel and Distributed Systems,Operating Systems
+Mariofanna,Milanova,2,Artificial Intelligence,Programming - Python
+Albert,Baker,2,Mobile Applications,Networks,Parallel and Distributed Systems,Operating Systems
+Matt,Kennett,2,Mobile Applications,Networks,Operating Systems,Programming - Python,Data Structures and Algorithms

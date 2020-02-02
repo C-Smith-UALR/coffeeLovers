@@ -1,7 +1,9 @@
 #Team CoffeeLovers
 #CPSC 4392 Capstone
 #January 31, 2020
-#A class that represents an academic class for the spring 2020 semester.
+#A class that represents an academic class for the spring 2020 semester.  a program to read
+#data from a csv file into a class for further manipulation, and then displays attributes
+#and meeting time
 
 
 import datetime
@@ -39,16 +41,24 @@ class AcademicClass:
     def getEndTime(self): #get end time
         return datetime.time(int(self.endHour), int(self.endMin))
 
+def loadClasses(filename,classList):
+    with open(filename, 'rt') as file:
+        next(file)  # skips the header line
+        for line in file:
+            classList.append(AcademicClass(line.split(',', 9)))
+    for curClass in classList:
+        curClass.convertToList()
+    return classList
 
 
 
-spring2020classes = []
-#list of classes
-
-with open('spring2020Classes.csv', 'rt') as file:
-    next(file) #skips the header line
-    for line in file:
-        spring2020classes.append(AcademicClass(line.split(',', 9)))  #creates new class object for each line in file
+# spring2020classes = []
+# #list of classes
+#
+# with open('spring2020Classes.csv', 'rt') as file:
+#     next(file) #skips the header line
+#     for line in file:
+#         spring2020classes.append(AcademicClass(line.split(',', 9)))  #creates new class object for each line in file
                                                                     #split() separates line at the ',' and passes separated
 # for curClass in range(len(spring2020classes)):                      #attribute to the constructor
 #     tempDisciplines = []
@@ -69,10 +79,10 @@ with open('spring2020Classes.csv', 'rt') as file:
 
 #DELETEME ^^^ above is old code before I moved it to a function within the class.  will delete eventually
 
-for curClass in spring2020classes:
-    curClass.convertToList()  #convert the disciplines attribute from string to list
-    print(curClass)
-    start = curClass.getStartTime()
-    end = curClass.getEndTime()  #print class time.  these functions return datetime.time objects
-    print('%s:%s-%s:%s' % (start.hour, start.minute, end.hour, end.minute))
+# for curClass in spring2020classes:
+#     curClass.convertToList()  #convert the disciplines attribute from string to list
+#     print(curClass)
+#     start = curClass.getStartTime()
+#     end = curClass.getEndTime()  #print class time.  these functions return datetime.time objects
+#     print('%s:%s-%s:%s' % (start.hour, start.minute, end.hour, end.minute))
 
